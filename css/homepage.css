@@ -397,6 +397,7 @@
 .product__top {
   margin-bottom: 26px;
 }
+
 .product__top--banner {
   padding-top: 24px;
   background-image: url(../assets/media/home/product/banner.png);
@@ -512,4 +513,137 @@
 
 .product__bottom--banner__sale {
   font-weight: 600;
+}
+
+/* Video */
+.video {
+  position: relative;
+  margin-bottom: 60px;
+  background-image: url(../assets/media/home/video/videoimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.video__title {
+  margin-bottom: 12px;
+  color: #fff;
+  font-family: "Segoe Script";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+
+.video__heading {
+  margin-bottom: 12px;
+  color: #fff;
+  max-width: 400px;
+}
+
+.video__label {
+  cursor: pointer;
+}
+
+.video__youtube {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  width: 80%;
+  height: 90%;
+  transition: 1s ease;
+}
+
+@media (max-width: 577.98px) {
+  .video__youtube {
+    height: 80%;
+  }
+}
+
+.video__checkbox:checked ~ .video__youtube {
+  display: block;
+}
+
+/* Team */
+.team {
+  margin-bottom: 60px;
+}
+
+.team__item {
+  border: 1px solid #e5e5e5;
+}
+
+.team__image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.team__social {
+  display: none;
+  position: absolute;
+  gap: 5px;
+}
+.team__item:hover .team__social {
+  display: flex;
+  align-items: center;
+}
+
+.team__social--link {
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.team__social--link:hover {
+  background: #00b207;
+}
+
+.team__social--icon {
+  margin: 11px;
+}
+
+.team__content {
+  padding: 16px 20px 20px;
+}
+
+.team__name {
+  margin-bottom: 4px;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/* Brands */
+.brands {
+  margin-bottom: 60px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e5e5e5;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brands__icon{
+  color: #CCCCCC;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.brands__icon:hover{
+  color: #00B207;
 }
