@@ -1,0 +1,163 @@
+.loginSignin {
+  background: #edf2ee;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+  .loginSignin {
+    grid-template-columns: 1fr;
+  }
+}
+
+.loginSignin__media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .loginSignin__media {
+    display: none;
+  }
+}
+
+.loginSignin__media--img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loginSignin__primary {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  color: #fff;
+}
+
+.loginSignin__form {
+  margin: 0 70px;
+}
+
+@media (max-width: 767.98px) {
+  .loginSignin__form {
+    text-align: center;
+  }
+}
+
+.loginSignin__form--top {
+  margin-bottom: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.loginSignin__form--img {
+  width: 50px;
+}
+
+.loginSignin__form--desc {
+  display: inline-block;
+  margin-top: 5px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 767.98px) {
+  .loginSignin__field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.loginSignin__group {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 337px;
+  gap: 10px;
+}
+
+.loginSignin__label--input {
+  padding: 18px 32px 18px 58px;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.loginSignin__label--input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  transition: #4f9c59 0.3s ease-in-out;
+}
+
+.loginSignin__label--img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 28px;
+  left: 22px;
+}
+
+.loginSignin__label--error {
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  top: 18px;
+  right: 22px;
+}
+
+.loginSignin__label--message {
+  margin-left: 20px;
+}
+
+.loginSignin__login {
+  display: inline-block;
+  margin: 10px 10px 0 30px;
+  padding: 18px 48px;
+  border-radius: 30px;
+  background: #00b207;
+  border: 1px solid #00b207;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.5s ease;
+}
+
+.loginSignin__login:hover {
+  background: #edf2ee;
+  color: #00b207;
+}
+
+.loginSignin__error{
+  display: inline-block;
+  margin-left: 24px;
+  color: #de2525;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.invalid > .loginSignin__label--input {
+  border-color: #de2525;
+}
+
+.invalid > .loginSignin__label--error {
+  display: inline-block;
+}
+.invalid > .loginSignin__label--message {
+  color: #de2525;
+}

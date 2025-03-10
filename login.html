@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecobaza | Home</title>
+    <title>Ecobaza | Login</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/favicon/favicon/favicon-96x96.png" sizes="96x96" />
@@ -20,12 +20,56 @@
     <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/form.css">
 
 </head>
 
 <body>
-    
+    <section class="loginSignin">
+        <!-- Login media-->
+        <div class="loginSignin__media">
+            <img src="./assets/media/form/media.png" alt="" class="loginSignin__media--img">
+            <h2 class="heading__primary loginSignin__primary">Welcome to Ecobaza</h2>
+        </div>
+
+        <!-- Login form-->
+        <form class="loginSignin__form" id="form__login" autocomplete="off" action="">
+            <div class="loginSignin__form--top">
+                <img src="./assets/media/common/logo.svg" alt="" class="loginSignin__form--img">
+                <div class="loginSignin__form--content">
+                    <h2 class="heading__secondary">Hello Again!</h2>
+                    <span class="loginSignin__form--desc">Welcome Back</span>
+                </div>
+            </div>
+
+            <div class="loginSignin__field">
+                <div class="loginSignin__group">
+                    <label for="username__login" class="loginSignin__label"></label>
+                    <input type="text" name="username__login" id="username__login" class="loginSignin__label--input"
+                        placeholder="Username">
+                    <span class="loginSignin__label--message"></span>
+                    <img src="./assets/media/form/username.svg" alt="" class="loginSignin__label--img">
+                    <img src="./assets/media/form/error.svg" alt="" class="loginSignin__label--error">
+                </div>
+
+                <div class="loginSignin__group">
+                    <label for="password__login" class="loginSignin__label"></label>
+                    <input type="password" name="password__login" id="password__login" class="loginSignin__label--input"
+                        placeholder="Password">
+                    <span class="loginSignin__label--message"></span>
+                    <img src="./assets/media/form/password.svg" alt="" class="loginSignin__label--img">
+                    <img src="./assets/media/form/error.svg" alt="" class="loginSignin__label--error">
+                </div>
+            </div>
+
+            <div class="loginSignin__action">
+                <button class="loginSignin__login">Login</button>
+                <a href="./signin.html" class="loginSignin__goTo">Create Acount</a>
+            </div>
+
+            <span class="loginSignin__error"></span>
+        </form>
+    </section>
 </body>
 <script type="module" src="./js/main.js"></script>
 
