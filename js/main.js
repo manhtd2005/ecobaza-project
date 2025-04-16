@@ -141,5 +141,5 @@ document.addEventListener("DOMContentLoaded", () => {
   loginStatus(loginStatusValue);
 });
 
-// Sự kiện đăng xuất
-signOut("signOut__btn");
+// // Sự kiện đăng xuất
+// signOut("signOut__btn");
