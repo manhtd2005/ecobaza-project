@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecobaza | Blog Details</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/favicon/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="./assets/favicon/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assets/favicon/favicon/site.webmanifest" />
+
+    <!-- Font-->
+    <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/blog-detail.css" />
+  </head>
+
+  <body>
+    <div class="container container-custom">
+      <!-- Header -->
+      <header class="header" id="header"></header>
+
+      <!-- Blog -->
+      <section class="blog">
+        <div class="row row-cols-2 g-3">
+          <div class="col-8">
+            <div class="blog__detail">
+              <img
+                src="./assets/media/blog/gallery14.png"
+                alt="Blog detail image"
+                class="blog__detail--img"
+              />
+              <div class="blog__detail--content">
+                <h1 class="blog__detail--content__title">
+                  Curabitur porttitor orci eget neque accumsan.
+                </h1>
+                <p class="blog__detail--content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+                <p class="blog__detail--content__text">
+                  Quisque posuere tempus rutrum. Integer velit ex, facilisis nec
+                  efficitur ac, tincidunt a ligula. Donec mattis arcu faucibus
+                  suscipit viverra. Donec nec nunc sed augue lacinia gravida.
+                </p>
+                <p class="blog__detail--content__text">
+                  Curabitur porttitor orci eget neque accumsan, at finibus enim
+                  fringilla. Donec mattis arcu faucibus suscipit viverra. Donec
+                  nec nunc sed augue lacinia gravida.
+                </p>
+              </div>
+            </div>
+            <div class="blog__detail--author">
+              <img
+                src="./assets/media/blog/gallery7.png"
+                alt="Author image"
+                class="blog__detail--author__img"
+              />
+              <div class="blog__detail--author__content">
+                <h3 class="blog__detail--author__content--name">John Doe</h3>
+                <p class="blog__detail--author__content--text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <aside class="blog__sidebar">
+              <button class="blog__sidebar--filter">
+                Filter
+                <img
+                  src="./assets/media/blog/icon-filter.svg"
+                  alt="Filter icon"
+                  class="blog__sidebar--filter__icon"
+                />
+              </button>
+
+              <label for="search-input" class="blog__sidebar--form">
+                <img
+                  src="./assets/media/blog/search-icon.svg"
+                  alt="Search icon"
+                  class="blog__sidebar--form__icon"
+                />
+                <input
+                  type="text"
+                  name="search"
+                  id="search-input"
+                  class="blog__sidebar--form__input"
+                  placeholder="Search..."
+                />
+              </label>
+
+              <div class="blog__sidebar--topCategory">
+                <h3 class="blog__sidebar--topCategory__title">
+                  Top Categories
+                </h3>
+                <div class="blog__sidebar--topCategory__list">
+                  <div class="blog__sidebar--topCategory__item">
+                    <span class="blog__sidebar--topCategory__tag"
+                      >Fresh Fruit</span
+                    >
+                    <span class="blog__sidebar--topCategory__number"
+                      >(134)</span
+                    >
+                  </div>
+
+                  <div class="blog__sidebar--topCategory__item">
+                    <span class="blog__sidebar--topCategory__tag"
+                      >Vegetables</span
+                    >
+                    <span class="blog__sidebar--topCategory__number"
+                      >(150)</span
+                    >
+                  </div>
+
+                  <div class="blog__sidebar--topCategory__item">
+                    <span class="blog__sidebar--topCategory__tag">Cooking</span>
+                    <span class="blog__sidebar--topCategory__number">(54)</span>
+                  </div>
+
+                  <div class="blog__sidebar--topCategory__item">
+                    <span class="blog__sidebar--topCategory__tag">Snacks</span>
+                    <span class="blog__sidebar--topCategory__number">(47)</span>
+                  </div>
+
+                  <div class="blog__sidebar--topCategory__item">
+                    <span class="blog__sidebar--topCategory__tag"
+                      >Beverages</span
+                    >
+                    <span class="blog__sidebar--topCategory__number">(43)</span>
+                  </div>
+
+                  <div class="blog__sidebar--topCategory__item">
+                    <span class="blog__sidebar--topCategory__tag"
+                      >Bread & Bakery</span
+                    >
+                    <span class="blog__sidebar--topCategory__number">(15)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog__sidebar--popularTag">
+                <h3 class="blog__sidebar--popularTag__title">Popular Tags</h3>
+                <div class="blog__sidebar--popularTag__list">
+                  <span class="blog__sidebar--popularTag__tag">Healthy</span>
+                  <span
+                    class="blog__sidebar--popularTag__tag blog__sidebar--popularTag__tag--choice"
+                    >Low fat</span
+                  >
+                  <span class="blog__sidebar--popularTag__tag">Vegetarian</span>
+                  <span class="blog__sidebar--popularTag__tag">Bread</span>
+                  <span class="blog__sidebar--popularTag__tag">Kid foods</span>
+                  <span class="blog__sidebar--popularTag__tag">Snacks</span>
+                  <span class="blog__sidebar--popularTag__tag">Tiffin</span>
+                  <span class="blog__sidebar--popularTag__tag">Meat</span>
+                  <span class="blog__sidebar--popularTag__tag">Launch</span>
+                  <span class="blog__sidebar--popularTag__tag">Dinner</span>
+                </div>
+              </div>
+
+              <div class="blog__sidebar--gallery">
+                <h3 class="blog__sidebar--gallery__title">Our Gallery</h3>
+
+                <div class="blog__sidebar--gallery__list">
+                  <img
+                    src="./assets/media/blog/gallery1.png"
+                    alt="Gallery image 1"
+                    class="blog__sidebar--gallery__item"
+                  />
+                  <img
+                    src="./assets/media/blog/gallery2.png"
+                    alt="Gallery image 2"
+                    class="blog__sidebar--gallery__item"
+                  />
+                  <img
+                    src="./assets/media/blog/gallery3.png"
+                    alt="Gallery image 3"
+                    class="blog__sidebar--gallery__item"
+                  />
+                  <img
+                    src="./assets/media/blog/gallery4.png"
+                    alt="Gallery image 4"
+                    class="blog__sidebar--gallery__item"
+                  />
+                  <img
+                    src="./assets/media/blog/gallery5.png"
+                    alt="Gallery image 5"
+                    class="blog__sidebar--gallery__item"
+                  />
+                  <img
+                    src="./assets/media/blog/gallery6.png"
+                    alt="Gallery image 6"
+                    class="blog__sidebar--gallery__item"
+                  />
+                  <img
+                    src="./assets/media/blog/gallery7.png"
+                    alt="Gallery image 7"
+                    class="blog__sidebar--gallery__item"
+                  />
+                  <img
+                    src="./assets/media/blog/gallery8.png"
+                    alt="Gallery image 8"
+                    class="blog__sidebar--gallery__item"
+                  />
+                </div>
+              </div>
+
+              <div class="blog__sidebar--recently">
+                <h3 class="blog__sidebar--recently__title">Recently Added</h3>
+                <div class="blog__sidebar--recently__list">
+                  <a
+                    href="./blog-detail.html"
+                    class="blog__sidebar--recently__item"
+                  >
+                    <img
+                      src="./assets/media/blog/gallery9.png"
+                      alt="Recently added image 1"
+                      class="blog__sidebar--recently__img"
+                    />
+                    <div class="blog__sidebar--recently__content">
+                      <p class="blog__sidebar--recently__content--title">
+                        Curabitur porttitor orci eget nequ accumsan.
+                      </p>
+                      <p class="blog__sidebar--recently__date">
+                        <img src="./assets/media/blog/calendar.svg" alt="" />
+                        Apr 25, 2021
+                      </p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="./blog-detail.html"
+                    class="blog__sidebar--recently__item"
+                  >
+                    <img
+                      src="./assets/media/blog/gallery10.png"
+                      alt="Recently added image 2"
+                      class="blog__sidebar--recently__img"
+                    />
+                    <div class="blog__sidebar--recently__content">
+                      <p class="blog__sidebar--recently__content--title">
+                        Donec mattis arcu faucibus suscipit viverra.
+                      </p>
+                      <p class="blog__sidebar--recently__date">
+                        <img src="./assets/media/blog/calendar.svg" alt="" />
+                        Apr 25, 2021
+                      </p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="./blog-detail.html"
+                    class="blog__sidebar--recently__item"
+                  >
+                    <img
+                      src="./assets/media/blog/gallery9.png"
+                      alt="Recently added image 3"
+                      class="blog__sidebar--recently__img"
+                    />
+                    <div class="blog__sidebar--recently__content">
+                      <p class="blog__sidebar--recently__content--title">
+                        Quisque posuere tempus rutrum. Integer velit ex.
+                      </p>
+                      <p class="blog__sidebar--recently__date">
+                        <img src="./assets/media/blog/calendar.svg" alt="" />
+                        Apr 25, 2021
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subcribe -->
+      <section class="subcribe" id="subcribe"></section>
+
+      <!-- Footer -->
+      <footer class="footer" id="footer"></footer>
+
+      <!-- Nocopyright-->
+      <div class="nocopyright" id="nocopyright"></div>
+    </div>
+  </body>
+  <script type="module" src="./js/main.js"></script>
+</html>

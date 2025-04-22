@@ -141,5 +141,20 @@ document.addEventListener("DOMContentLoaded", () => {
   loginStatus(loginStatusValue);
 });
 
-// // Sự kiện đăng xuất
-// signOut("signOut__btn");
+// Sự kiện đăng xuất
+handleLogout("signOut__btn", () => {
+  sessionStorage.removeItem("currentUser");
+  sessionStorage.setItem("loginStatus", "false");
+  loginStatus("false");
+
+  toastUI({
+    type: "info",
+    message: "Đăng xuất thành công",
+    desc: "Bạn đã đăng xuất khỏi tài khoản",
+  });
+
+  // Chuyển hướng sau khi toast hiển thị xong (3 giây)
+  setTimeout(() => {
+    window.location.href = "login.html";
+  }, 2500);
+});
